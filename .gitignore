@@ -1,0 +1,10 @@
+*.class
+*.dll
+*.exe
+*.csproj
+
+bin/
+obj/
+TestResults/
+packages/
+Properties/
