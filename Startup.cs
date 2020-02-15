@@ -33,6 +33,8 @@ namespace ecommercebackend
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
 
             services.AddCors();
+
+            services.AddControllers().AddNewtonsoftJson(); // Fixes "The JSON value could not be converted to System.Int32" when making axios.post requests via react
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -47,10 +47,7 @@ namespace ecommercebackend.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutNoneApparel(int id, NoneApparel noneApparel)
         {
-            if (id != noneApparel.id)
-            {
-                return BadRequest();
-            }
+            noneApparel.id = id;
 
             _context.Entry(noneApparel).State = EntityState.Modified;
 

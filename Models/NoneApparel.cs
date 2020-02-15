@@ -15,7 +15,7 @@ namespace ecommercebackend.Models
         [Column(TypeName = "nvarchar(100)")]
         public string img { get; set; }
 
-        [Column(TypeName = "nvarchar(8)")]
+        [Column(TypeName = "nvarchar(100)")]
         public string name { get; set; }
 
         public int price { get; set; }
